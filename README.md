@@ -1,4 +1,4 @@
-# How to hide the detailsview expander icon based on child records count in WinUI DataGrid
+# How to Hide the DetailsView Expander Icon Based on Child Records Count in WinUI DataGrid?
 
 This example describes how to hide the detailsview expander icon based on child records count in [WinUI DataGrid](https://www.syncfusion.com/winui-controls/datagrid) (SfDataGrid).
 
@@ -6,6 +6,7 @@ By default, the state of expander icon is visible for all the data rows in paren
 
 You can customize hiding the details view expander icon by handling the `SfDataGrid.QueryDetailsViewExpanderState` event. This event occurs when expander icon is changed on expanding or collapsing the details view. You can hide the expander icon by setting the `ExpanderVisibility` property to `false` in the `SfDataGrid.QueryDetailsViewExpanderState` event based on condition.
 
+#### C#
 ``` csharp
 dataGrid.DetailsViewExpanding += DataGrid_DetailsViewExpanding;
 dataGrid.QueryDetailsViewExpanderState += DataGrid_QueryDetailsViewExpanderState;
@@ -35,4 +36,4 @@ private void DataGrid_QueryDetailsViewExpanderState(object sender, QueryDetailsV
 
 The following screenshot illustrates hiding expander icon state based on child items count.
 
-![hide the detailsview expander](hide_the_detailsview_expander_icon.png)
+![hide the detailsview expander icon based on child records](HideExpanderIcon.png)
